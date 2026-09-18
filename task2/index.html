@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigational Page.</title>
+    <title>Student Tasks | Assignment 1</title>
     <link rel="stylesheet" href="stytle.css">
 </head>
 <body>
-    <h1>Assignment 1 - Navigational Page</h1>
-    <div>
-        <ul>
-            <li><a href="../task1/index.html">Task1</a></li>
-            <li><a href="../task2/index.html">Task2</a></li>
-            <li><a href="../task3/index.html">Task3</a></li>
-            <li><a href="../task4/index.html">Task4</a></li>
-        </ul>
+    <div class="page">
+        <div class="header">
+            <h1>Web Frontend Assignments</h1>
+            <p>A simple layout built with divs and CSS floats.</p>
+        </div>
+
+        <div class="navigation">
+            <a href="../task1/index.html">Task 1</a>
+            <a href="index.html">Task 2</a>
+            <a href="../task3/index.html">Task 3</a>
+            <a href="../task4/index.html">Task 4</a>
+        </div>
+
+        <div class="content-area">
+            <div class="sidebar">
+                <h2>Menu</h2>
+                <a href="#overview">Overview</a>
+                <a href="#topics">Topics</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="aside" id="overview">
+                <h2>Welcome to Task 2</h2>
+                <p>This page demonstrates a traditional two-column webpage. The menu is floated to the left, while this content section is floated to the right. Each area has its own spacing, color, and border to keep the layout clear and easy to read.</p>
+                <div class="topic-note" id="topics">CSS positioning and floats are useful foundations for understanding page layouts.</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="footer" id="contact">
+            <p>&copy; 2026 Web Frontend Assignments. All rights reserved.</p>
+        </div>
     </div>
-    
 </body>
 </html>

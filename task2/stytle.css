@@ -1,18 +1,145 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-color: rgb(0, 0, 65);
     color: #e2e8f0;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding:0;
 }
-ul{
-    justify-content: center;
-    text-decoration: none;
-    border-color: darkcyan;
-    width: 80%;
-    height: 70%;
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-a{
+
+.header, .content-area, .footer {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    margin-top: 35px;
+    padding: 25px;
+    text-align: center;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 26px;
+    margin: 10px 0 5px;
+}
+
+.header p, .aside p, .footer p {
+    color: whitesmoke;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.header p, .footer p {
+    margin-bottom: 0;
+}
+
+.navigation {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+    margin: 25px 0;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.navigation a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px;
     text-decoration: none;
-    color: white;
+    transition: 0.2s;
+}
+
+.navigation a:hover {
+    color: #38bdf8;
+}
+
+.content-area {
+    padding: 25px;
+}
+
+.sidebar {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    float: left;
+    padding: 20px;
+    width: 28%;
+}
+
+.sidebar h2, .aside h2 {
+    color: #38bdf8;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.sidebar a {
+    background-color: #1e293b;
+    border-left: 3px solid #38bdf8;
+    color: #ffffff;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.sidebar a:hover {
+    background-color: #1d4ed8;
+}
+
+.aside {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    float: right;
+    min-height: 240px;
+    padding: 25px;
+    width: 68%;
+}
+
+.topic-note {
+    background-color: #1e293b;
+    border-left: 3px solid #38bdf8;
+    color: #e2e8f0;
+    line-height: 1.6;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    margin: 25px 0 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 620px) {
+    .page {
+        padding: 0 12px;
+    }
+
+    .navigation a {
+        margin: 8px 12px;
+    }
+
+    .sidebar, .aside {
+        float: none;
+        margin-bottom: 15px;
+        width: 100%;
+    }
 }

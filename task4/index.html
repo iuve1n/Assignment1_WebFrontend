@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task 4 | Grades and Feedback</title>
+    <link rel="stylesheet" href="stytle.css">
 </head>
 <body>
-    
+    <nav>
+        <a href="../task1/index.html">Task 1</a>
+        <a href="../task2/index.html">Task 2</a>
+        <a href="../task3/index.html">Task 3</a>
+        <a href="index.html">Task 4</a>
+    </nav>
+
+    <main class="content">
+        <section class="card">
+            <h1 id="grades-heading">Student Grades</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Web Frontend — Semester Results</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alseit</td>
+                        <td>HTML Fundamentals</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>Olzhas</td>
+                        <td>CSS Layout</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Amirlan</td>
+                        <td>JavaScript Basics</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Maksat</td>
+                        <td>Responsive Design</td>
+                        <td>A+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="form-card">
+            <h2>Feedback Form</h2>
+            <p>Share your thoughts about this web frontend course.</p>
+            <form id="feedback-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="role">Your role</label>
+                <select id="role" name="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <fieldset>
+                    <legend>Would you recommend this course?</legend>
+                    <label class="radio-label"><input type="radio" name="recommend" value="yes" required> Yes</label>
+                    <label class="radio-label"><input type="radio" name="recommend" value="no"> No</label>
+                </fieldset>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Write your feedback here..."></textarea>
+
+                <button type="submit">Send Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Frontend Assignments</p>
+    </footer>
 </body>
 </html>
