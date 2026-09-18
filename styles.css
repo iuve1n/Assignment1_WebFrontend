@@ -58,6 +58,10 @@ header nav {
     }
 }
 
+.task-links {
+    font-size: 0.8rem;
+}
+
 #home {
     height: 90vh;
     display: flex;

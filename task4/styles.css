@@ -43,14 +43,18 @@ a:hover { color: #c778dd; transition: color .25s ease; }
 }
 
 h1, h2 { color: #c778dd; margin-top: 0; }
+#grades-heading { border-bottom: 2px solid #c778dd; padding-bottom: .65rem; }
 
 table { border-collapse: collapse; width: 100%; }
-th, td { border: 1px solid #515866; padding: .8rem; text-align: left; }
+th, td { border: 1px solid #515866; padding: .8rem; text-align: center; }
 th { background: #393e47; color: #c778dd; }
-tbody tr:hover, .highlight-row { background: rgba(199, 120, 221, .12); }
+tbody tr:nth-child(even) { background: rgba(171, 178, 191, .12); }
+tbody tr:hover { background: rgba(199, 120, 221, .12); }
+.highlight-row { background: rgba(199, 120, 221, .28) !important; }
 
 .form-card > p { color: #abb2bf; line-height: 1.6; }
-form { display: flex; flex-direction: column; gap: .7rem; }
+form { display: flex; flex-direction: column; gap: .7rem; margin: 0 auto; max-width: 430px; width: 100%; }
+label { font-weight: 700; }
 input, select, textarea {
     background: #282c33;
     border: 1px solid #515866;
@@ -58,10 +62,11 @@ input, select, textarea {
     color: #fff;
     font: inherit;
     padding: .75rem;
+    width: 100%;
 }
 input:focus, select:focus, textarea:focus { border-color: #c778dd; outline: none; }
 fieldset { border: 1px solid #515866; border-radius: 5px; margin: .5rem 0; padding: .8rem; }
-.radio-label { margin-right: 1rem; }
+.radio-label { font-weight: 400; margin-right: 1rem; }
 .radio-label input { accent-color: #c778dd; margin-right: .4rem; }
 button {
     background: #c778dd;

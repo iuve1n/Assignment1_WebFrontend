@@ -62,6 +62,7 @@ a:hover { color: #c778dd; transition: color .25s ease; }
     width: 28%;
 }
 
+.sidebar ul { list-style: none; margin: 0; padding: 0; }
 .sidebar a { display: block; margin-top: 1rem; }
 
 .aside {
