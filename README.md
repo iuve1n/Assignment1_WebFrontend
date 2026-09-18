@@ -6,14 +6,6 @@ This repository contains five HTML and CSS tasks for the Web Frontend course. It
 
 Open `index.html` in a browser, then choose a task from the landing page. Task 3 redirects to its tribute page in `task3/exercise1/`.
 
-## Task 5 concept
+## Task 5 concept — LeafLoop Book Exchange
 
-CampusConnect is a student-focused platform for discovering campus events, study resources, and community groups. Its target users are AITU students who want a simple central place for academic and campus-life information. The five planned pages are Home, Events, Study Resources, Community, and Contact. The sitemap and low-fidelity layouts are available at `task5/wireframes.html`.
-
-## Publish with GitHub Pages
-
-1. Push this repository to GitHub.
-2. On GitHub, open **Settings** → **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and the `/ (root)` folder, then save.
-5. GitHub will provide the public site URL after deployment.
+LeafLoop is a local book-exchange website where readers can offer books, discover available titles, and arrange swaps. Its target users are students and local readers who want an affordable, sustainable way to find books. The platform helps books stay in circulation while making it easy for people with similar interests to connect. The five planned pages are Home, Browse Books, List a Book, My Swaps, and Profile. The sitemap and low-fidelity layouts are available at `task5/wireframes.html`.
