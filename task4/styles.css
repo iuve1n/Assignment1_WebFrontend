@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+    background: #282c33;
+    color: #fff;
+    font-family: "Fira Code", monospace;
+    margin: 0;
+}
+
+nav, footer {
+    border-color: #c778dd;
+    border-style: solid;
+}
+
+nav {
+    border-width: 0 0 1px;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+a { color: #fff; text-decoration: none; }
+a:hover { color: #c778dd; transition: color .25s ease; }
+
+.content {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 1100px;
+    min-height: calc(100vh - 145px);
+    padding: 4rem 1.5rem;
+}
+
+.card, .form-card {
+    background: rgba(57, 62, 71, .65);
+    border: 1px solid #515866;
+    border-radius: 16px;
+    padding: 1.75rem;
+}
+
+h1, h2 { color: #c778dd; margin-top: 0; }
+
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #515866; padding: .8rem; text-align: left; }
+th { background: #393e47; color: #c778dd; }
+tbody tr:hover, .highlight-row { background: rgba(199, 120, 221, .12); }
+
+.form-card > p { color: #abb2bf; line-height: 1.6; }
+form { display: flex; flex-direction: column; gap: .7rem; }
+input, select, textarea {
+    background: #282c33;
+    border: 1px solid #515866;
+    border-radius: 5px;
+    color: #fff;
+    font: inherit;
+    padding: .75rem;
+}
+input:focus, select:focus, textarea:focus { border-color: #c778dd; outline: none; }
+fieldset { border: 1px solid #515866; border-radius: 5px; margin: .5rem 0; padding: .8rem; }
+.radio-label { margin-right: 1rem; }
+.radio-label input { accent-color: #c778dd; margin-right: .4rem; }
+button {
+    background: #c778dd;
+    border: 1px solid #c778dd;
+    border-radius: 5px;
+    color: #282c33;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    margin-top: .5rem;
+    padding: .8rem;
+}
+button:hover { background: transparent; color: #c778dd; transition: .25s ease; }
+
+footer { border-width: 1px 0 0; color: #c778dd; padding: 1.25rem; text-align: center; }
+footer p { margin: 0; }
+
+@media (max-width: 750px) {
+    nav { flex-wrap: wrap; }
+    .content { grid-template-columns: 1fr; padding-top: 2rem; }
+}

@@ -3,39 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>myPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../task1/index.html">Task1</a></li>
-            <li><a href="../task2/index.html">Task2</a></li>
-            <li><a href="../task3/index.html">Task3</a></li>
-            <li><a href="../task4/index.html">Task4</a></li>
-        </ul>
-    </nav>
-    <section id="intro">
-        <img src="logo.png" alt="logo">
-        <h1>Hello World</h1>
-        <h2>Building thoughtful digital experiences.</h2>
-        <p>
-            I’m Olzhas, a software engineering student creating clean, useful web applications and documenting the journey.
-        </p>
-    </section>
-    <section id="about">
-        <h2>Curious by design</h2>
-        <p>
-            I’m a second-year student at AITU who enjoys making web products that feel simple, clear, and well considered.
 
-Outside coursework, I learn new technologies, build personal projects, and explore the technical and philosophical questions behind how things work.
-        </p>
-    </section>
-    <section id="contactme">
-        <h2>Contact me</h2>
-        <div>
-            <a href=""></a>
-            <a href=""></a>
+    <header>
+        <nav>
+            <div class="logo"><b>Olzhas</b></div>
+            <ul class="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about-me</a></li>
+                <li><a href="#works">projects</a></li>
+                <li><a href="#contacts">contacts</a></li>
+            </ul>
+            <select class = "language">
+                <option value="en">EN</option>
+                <option value="kz">KZ</option>
+                <option value="ru">RU</option>
+            </select>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="home-text">
+            <h2>Hello, World!</h2>
+            <h1>I'am glad to see you here!</h1>
+            <p>Your one-stop destination to know more about me and my work.</p>
         </div>
+        <img src="logo.png" alt="Olzhas portfolio logo">
+    </section>
+    <section id="works">
+        <div class="works-container">
+            <h1>My Projects</h1>
+            <div class="works-description">
+
+                <div class="project-card">
+                    <img src="img/speakSpace.png" alt="project1">
+                    <h2>SpeakSpace</h2>
+                    <p>In real-time scenarios, enhancing your fluency and confidence.</p>
+
+                </div>
+                <div class="project-card">
+                    <img src="img/thinking1.png" alt="project2">
+                    <h2>GYS</h2>
+                    <p>Status generator bot in telegram for Tele2 call center agents.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img/thinking1.png" alt="project3">
+                    <h2>Lingot</h2>
+                    <p>I am currently working on creating a project.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>I’m a second-year student at AITU who enjoys making web products that feel simple, clear, and well considered.
+
+Outside coursework, I learn new technologies, build personal projects, and explore the technical and philosophical questions behind how things work.</p>
+            </div>
+            <div class="about-image">
+                <img src="img/helloWorld.png" alt="Hello, World!">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacts">
+        <h1>Contact Me</h1>
+        <div class="container">
+            <div class="contacts-text">
+                <p>If you'd like to get in touch,feel free to reach out via email at <a href="mailto:olzhasassemgazy@gmail.com">olzhasassemgazy@gmail.com</a></p>
+            </div>
+            <div class="contacts-links">
+                <a href="https://github.com/iuve1n"><img src="img/github.svg" alt="github"></a>
+                <a href="https://t.me/iuvein"><img src="img/telegram.svg" alt="telegram"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Olzhas Assemgazy. All rights reserved.</p>
+    </footer>
 </body>
 </html>

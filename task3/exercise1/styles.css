@@ -1,159 +1,76 @@
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+* { box-sizing: border-box; }
 
 body {
-    background: linear-gradient(145deg, rgb(0, 0, 65), #0f172a);
-    color: #e2e8f0;
-    font-family: "Open Sans", Arial, sans-serif;
+    background: #282c33;
+    color: #fff;
+    font-family: "Fira Code", monospace;
     margin: 0;
 }
 
-header {
-    background-color: #1e293b;
-    border-bottom: 1px solid #334155;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    padding: 35px 25px;
+header, footer {
+    background: rgba(40, 44, 51, .9);
+    border-color: #c778dd;
+    border-style: solid;
     text-align: center;
 }
 
-header h1,
-h2,
-h3,
-.btn {
-    font-family: Montserrat, Arial, sans-serif;
+header {
+    border-width: 0 0 1px;
+    padding: 3.5rem 1.5rem;
 }
 
-header h1 {
-    color: #ffffff;
-    font-size: 34px;
-    margin: 0 0 8px;
+header h1 { color: #c778dd; font-size: clamp(2rem, 6vw, 3.25rem); margin: 0 0 .75rem; }
+header p { color: #abb2bf; margin: 0; }
+
+.content { margin: 0 auto; max-width: 950px; padding: 3rem 1.5rem; }
+
+.intro-card, .details-card, .learn-more {
+    background: rgba(57, 62, 71, .65);
+    border: 1px solid #515866;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    padding: 1.75rem;
 }
 
-header p {
-    color: #38bdf8;
-    margin: 0;
-}
-
-.content {
-    margin: 35px auto;
-    max-width: 860px;
-    padding: 0 20px;
-}
-
-.intro-card,
-.details-card,
-.learn-more {
-    background-color: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    margin-bottom: 25px;
-    padding: 25px;
-}
-
-.intro-card {
-    overflow: auto;
-}
-
+.intro-card { overflow: auto; }
 .intro-card img {
-    border: 3px solid #38bdf8;
+    border: 2px solid #c778dd;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     float: left;
-    margin: 0 25px 12px 0;
+    margin: 0 1.5rem 1rem 0;
     max-width: 260px;
     width: 38%;
 }
 
-h2 {
-    color: #38bdf8;
-    font-size: 21px;
-    margin: 0 0 14px;
-}
+h2 { color: #c778dd; font-size: 1.3rem; margin: 0 0 .9rem; }
+h3 { color: #abb2bf; font-size: 1rem; margin: 0 0 1rem; }
+p, li { line-height: 1.7; }
+ol, ul { margin: 0; padding-left: 1.75rem; }
+li { margin-bottom: .65rem; }
+ol { list-style-type: decimal-leading-zero; }
+ul { list-style-type: square; }
 
-h3 {
-    color: #94a3b8;
-    font-size: 16px;
-    margin: 0 0 14px;
-}
-
-p,
-li {
-    color: whitesmoke;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-ol,
-ul {
-    margin: 0;
-    padding-left: 28px;
-}
-
-ol {
-    list-style-type: decimal-leading-zero;
-}
-
-ul {
-    list-style-type: square;
-}
-
-li {
-    margin-bottom: 10px;
-    padding-left: 5px;
-}
-
-a {
-    color: #38bdf8;
-}
-
-a:hover {
-    color: #ffffff;
-}
-
-.learn-more {
-    text-align: center;
-}
-
+a { color: #c778dd; }
+a:hover { color: #fff; }
+.learn-more { text-align: center; }
 .btn {
-    background-color: #38bdf8;
-    border-radius: 6px;
-    color: #0f172a;
+    border: 1px solid #c778dd;
+    border-radius: 5px;
+    color: #c778dd;
     display: inline-block;
     font-weight: 700;
-    margin-top: 8px;
-    padding: 11px 18px;
+    margin-top: .5rem;
+    padding: .75rem 1rem;
     text-decoration: none;
-    transition: 0.2s ease;
 }
+.btn:hover { background: #c778dd; color: #282c33; transition: .25s ease; }
 
-.btn:hover {
-    background-color: #1d4ed8;
-    color: #ffffff;
-}
-
-footer {
-    background-color: #1e293b;
-    border-top: 1px solid #334155;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    color: #94a3b8;
-    margin: 0;
-}
+footer { border-width: 1px 0 0; padding: 1.5rem; }
+footer p { color: #c778dd; margin: 0; }
 
 @media (max-width: 600px) {
-    .content {
-        margin: 25px auto;
-        padding: 0 12px;
-    }
-
-    .intro-card img {
-        float: none;
-        margin: 0 auto 20px;
-        width: 100%;
-    }
+    .content { padding: 2rem 1rem; }
+    .intro-card img { float: none; margin: 0 0 1.25rem; max-width: none; width: 100%; }
 }
