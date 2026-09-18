@@ -67,6 +67,7 @@ header nav {
 
     img {
         height: 40vh;
+        max-width: 100%;
         width: 40vh;
         border-radius: 50%;
         transition: 0.5s;
@@ -105,9 +106,48 @@ section {
     max-width: 50vw;
 }
 
+.skills-card,
+.profile-card {
+    background-color: #393e47a1;
+    border: 1px solid #515866;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.skills-card {
+    margin-top: 25px;
+}
+
+.skills-card h2 {
+    color: #C778DD;
+    margin-bottom: 12px;
+}
+
+.skills-card ol {
+    padding-left: 25px;
+}
+
+.skills-card li {
+    margin-bottom: 8px;
+}
+
+.profile-card {
+    max-width: 360px;
+    text-align: center;
+}
+
+.profile-card h2 {
+    margin: 15px 0 8px;
+}
+
+.profile-card p {
+    margin-top: 8px;
+}
+
 .about-image img {
     height: 40vh;
     width: 40vh;
+    max-width: 100%;
     border-radius: 20%;
     transition: 0.5s;
     border-style: solid;
@@ -213,5 +253,61 @@ footer {
 
     p {
         color: #C778DD;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 0;
+    }
+
+    header nav,
+    header nav ul {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home,
+    .about-container,
+    .works-description {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+        min-height: 0;
+        padding: 40px 15px;
+        text-align: center;
+    }
+
+    #about,
+    #works,
+    #contacts {
+        height: auto;
+        min-height: 0;
+    }
+
+    .about-text,
+    .contacts-text {
+        max-width: 100%;
+    }
+
+    .project-card {
+        height: auto;
+        max-width: 320px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding: 25px;
+    }
+
+    .contacts-links {
+        margin-right: 0;
     }
 }

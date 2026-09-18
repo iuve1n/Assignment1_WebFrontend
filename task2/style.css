@@ -32,11 +32,11 @@ h1, h2 { margin-top: 0; }
 
 .navigation {
     border-width: 0 0 1px;
-    display: flex;
-    gap: 1.25rem;
-    justify-content: center;
     padding: 1rem;
+    text-align: center;
 }
+
+.navigation a { display: inline-block; margin: 0 .625rem; }
 
 a { color: #fff; text-decoration: none; }
 a:hover { color: #c778dd; transition: color .25s ease; }
@@ -89,7 +89,7 @@ a:hover { color: #c778dd; transition: color .25s ease; }
 .footer p { margin: 0; }
 
 @media (max-width: 650px) {
-    .navigation { flex-wrap: wrap; }
+    .navigation a { margin: .4rem .625rem; }
     .sidebar, .aside { float: none; width: 100%; }
     .aside { margin-top: 1.25rem; }
 }
